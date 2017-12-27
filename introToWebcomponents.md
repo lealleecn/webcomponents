@@ -57,7 +57,7 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 
 	<button is="customized-button">Click Me :)</button>
 
-这里我们创建了`CustomizedButton `, 继承自`HTMLButtonElement`。 在声明是注意最后一个参数`{ extends: "button" }`。在使用是通过`is`属性绑定到`button`标签上。
+这里我们创建了`CustomizedButton `, 继承自`HTMLButtonElement`。 在声明时注意最后一个参数`{ extends: "button" }`。在使用是通过`is`属性绑定到`button`标签上。
 
 通过这种方，我们可以扩展任意的原生html标签，比如：`HTMLDivElement`, `HTMLFormElement`, `HTMLLinkElement` ..
 
@@ -96,7 +96,8 @@ slot 提供了在使用自定义标签的时候可以传递子模板给到内部
 在页面上使用方式如下：
 
 	<my-header>
-		<span slot="header">This is header</span>		<span slot="sub-header">This is header</span>
+		<span slot="header">This is header</span>		
+		<span slot="sub-header">This is header</span>
 	</my-header>	
 	
 最终浏览器解析结果如下：
