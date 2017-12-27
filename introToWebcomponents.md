@@ -96,8 +96,8 @@ slot 提供了在使用自定义标签的时候可以传递子模板给到内部
 在页面上使用方式如下：
 
 	<my-header>
-		<span slot="header">This is header</span>		
-		<span slot="sub-header">This is header</span>
+	    <span slot="header">This is header</span>		
+	    <span slot="sub-header">This is header</span>
 	</my-header>	
 	
 最终浏览器解析结果如下：
