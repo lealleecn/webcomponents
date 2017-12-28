@@ -50,7 +50,7 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 可以利用这些方法来实现组件的具体逻辑。
 
 
-### 自定义属性(customized built-in element)
+### 扩展原生HTML元素(customized built-in element)
 
 示例：
 	
@@ -156,6 +156,8 @@ HTML Import用于将外部的HTML文档加载进当前文档。我们可以将�
 [http://javascript.ruanyifeng.com/htmlapi/webcomponents.html](http://javascript.ruanyifeng.com/htmlapi/webcomponents.html)
 
 [http://mobile.51cto.com/web-440551.htm](http://mobile.51cto.com/web-440551.htm)
+
+[https://developers.google.com/web/fundamentals/web-components/customelements?hl=zh-cn](https://developers.google.com/web/fundamentals/web-components/customelements?hl=zh-cn)
 ### 英文
 [https://www.webcomponents.org/](https://www.webcomponents.org/)
 
