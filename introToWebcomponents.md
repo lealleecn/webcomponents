@@ -22,13 +22,16 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 示例：
 	
 	class AutonomousButton extends HTMLElement {
-	  // Fires when an instance of the element is created.
-          createdCallback() {};
-          // Fires when an instance was inserted into the document.
-          attachedCallback() {};
-          // Fires when an instance was removed from the document.
-          detachedCallback() {};
-          // Fires when an attribute was added, removed, or updated.
+	  // 创建或升级元素的一个实例。用于初始化状态、设置事件侦听器或创建 Shadow DOM。
+	  constructor() {};
+	  // 元素每次插入到 DOM 时都会调用。用于运行安装代码，例如获取资源或渲染。一般来说，您应将工作延迟至合适时机执行。
+          connectedCallback() {};
+          // 元素每次从 DOM 中移除时都会调用。用于运行清理代码（例如移除事件侦听器等）。
+          disconnectedCallback() {};
+          // 自定义元素被移入新的 document（例如，有人调用了 document.adoptNode(el)）。
+          adoptedCallback() {};
+          // 属性添加、移除、更新或替换。解析器创建元素时，或者升级时，也会调用它来获取初始值。
+	  // 注：仅 observedAttributes 属性中列出的特性才会收到此回调。
           attributeChangedCallback(attr, oldVal, newVal) {};
 	}
 	customElements.define("autonomous-button", AutonomousButton);
@@ -55,7 +58,8 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 自定义内置元素是用于扩展某个浏览器内置 HTML 标记的自定义元素。 扩展现有元素的主要好处是能获得其所有功能（DOM 属性、方法）。
 
 示例：
-	
+
+	// See https://html.spec.whatwg.org/multipage/indices.html#element-interfaces for the list of other DOM interfaces.
 	class CustomizedButton extends HTMLButtonElement {
 	  ...
 	}
