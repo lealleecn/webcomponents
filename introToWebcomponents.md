@@ -52,6 +52,8 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 
 ### 扩展原生HTML元素(customized built-in element)
 
+自定义内置元素是用于扩展某个浏览器内置 HTML 标记的自定义元素。 扩展现有元素的主要好处是能获得其所有功能（DOM 属性、方法）。
+
 示例：
 	
 	class CustomizedButton extends HTMLButtonElement {
