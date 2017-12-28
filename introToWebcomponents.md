@@ -172,5 +172,10 @@ HTML Import用于将外部的HTML文档加载进当前文档。我们可以将�
 [https://www.webcomponents.org/](https://www.webcomponents.org/)
 
 
+## Demo Examples
+
+[https://developers.google.com/web/fundamentals/web-components/examples/howto-checkbox?hl=zh-cn](https://developers.google.com/web/fundamentals/web-components/examples/howto-checkbox?hl=zh-cn)
+
+[https://github.com/mdn/web-components-examples](https://github.com/mdn/web-components-examples)
 
 
