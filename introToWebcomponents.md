@@ -22,8 +22,14 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 示例：
 	
 	class AutonomousButton extends HTMLElement {
-	  attributeChangedCallback(name, oldValue, newValue) {...}
-	  connectedCallback() {...}
+	  // Fires when an instance of the element is created.
+          createdCallback() {};
+          // Fires when an instance was inserted into the document.
+          attachedCallback() {};
+          // Fires when an instance was removed from the document.
+          detachedCallback() {};
+          // Fires when an attribute was added, removed, or updated.
+          attributeChangedCallback(attr, oldVal, newVal) {};
 	}
 	customElements.define("autonomous-button", AutonomousButton);
 	
