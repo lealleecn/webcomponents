@@ -17,7 +17,7 @@ Web components目前还处于草案阶段，这里我们基于最新的版本来
 ## Custom Elements
 Custom Elements顾名思义就是自定义元素，这是web components的基础。在web components没有出现之前，浏览器是无法识别我们自定义的web元素的。在新的标准里面，我们可以有两种方式来创建自定义的元素：
 
-### 自定义元素
+### 自定义元素(autonomous custom element)
 
 示例：
 	
@@ -50,7 +50,7 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 可以利用这些方法来实现组件的具体逻辑。
 
 
-### 自定义属性
+### 自定义属性(customized built-in element)
 
 示例：
 	
