@@ -75,9 +75,13 @@ Custom Elements顾名思义就是自定义元素，这是web components的基础
 
 
 ## Shadow DOM
-所谓Shadow DOM指的是，浏览器将模板、样式表、属性、JavaScript代码等，封装成一个独立的DOM元素。外部的设置无法影响到其内部，而内部的设置也不会影响到外部. 
+所谓Shadow DOM指的是，浏览器将模板、样式表、属性、JavaScript代码等，封装成一个独立的DOM元素。外部的设置无法影响到其内部，而内部的设置也不会影响到外部. **Shadow DOM 修复了 CSS 和 DOM**。它在网络平台中引入**作用域样式**。
 
-Shadow DOM最大的好处有两个，一是可以向用户隐藏细节，直接提供组件，二是可以封装内部样式表，不会影响到外部。
+Shadow DOM可为网络开发中的常见问题提供解决方案:
+
+- **隔离 DOM**: 组件的 DOM 是独立的（例如，document.querySelector() 不会返回组件 shadow DOM 中的节点）。
+- **作用域 CSS**：shadow DOM 内部定义的 CSS 在其作用域内。样式规则不会泄漏，页面样式也不会渗入。
+- **简化 CSS**: 作用域 DOM 意味着您可以使用简单的 CSS 选择器，更通用的 id/类名称，而无需担心命名冲突。
 
 Shadow DOM需要挂载到一个宿主元素上，使用方式如下：
 	
